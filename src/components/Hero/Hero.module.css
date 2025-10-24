@@ -1,0 +1,249 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  padding-left: 2%;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.textContent {
+  max-width: 550px;
+  z-index: 2;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  overflow: hidden;
+}
+
+/* Animated Name - infinite scrolling effect */
+.animatedName {
+  display: inline-block;
+  color: white;
+  white-space: nowrap;
+  animation: scrollText 8s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #64ffda;
+  font-weight: 500;
+  animation: fadeIn 3.5s ease-out;
+  text-align: left;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 4s ease-out;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  animation: fadeIn 4.5s ease-out;
+  justify-content: flex-start;
+}
+
+.btn {
+  padding: 0.75rem 1.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  background: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+}
+
+.btn:hover {
+  background: #64ffda;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.btnPrimary {
+  background: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+}
+
+.btnPrimary:hover {
+  background: #64ffda;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.btnOutline {
+  background: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+}
+
+.btnOutline:hover {
+  background: #64ffda;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  animation: fadeIn 5s ease-out;
+  justify-content: flex-start;
+}
+
+.socialLinks a {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.socialLinks a:hover {
+  color: #64ffda;
+  transform: translateY(-5px);
+  background: rgba(100, 255, 218, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 2rem;
+    padding-top: 1rem;
+  }
+
+  .textContent {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 1.4;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  .title, .subtitle, .description {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 90px;
+  }
+
+  .container {
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-top: 3.5rem;
+    line-height: 1.5;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
