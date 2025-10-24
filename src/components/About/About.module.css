@@ -1,5 +1,5 @@
 .about {
-  padding: 100px 0;
+  padding: 10px 0 60px 0; /* Minimal top padding */
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   position: relative;
   overflow: hidden;
@@ -39,7 +39,7 @@
 
 .header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem; /* Minimal spacing */
 }
 
 .title {
@@ -64,28 +64,28 @@
   grid-template-columns: 1fr 1.5fr;
   gap: 4rem;
   align-items: start;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem; /* Reduced from 4rem */
 }
 
 .imageSection {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 2rem;
+  padding-top: 0; /* Reduced from 2rem */
   animation: fadeInLeft 1s ease;
 }
 
 
 .aboutImage {
   width: 100%;
-  max-width: 400px;
-  height: 400px;
+  max-width: 500px; /* Increased from 400px */
+  height: 500px; /* Increased from 400px */
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   border: 8px solid white;
   transition: all 0.5s ease;
-  margin-top: 30px;
+  margin-top: 0; /* Reduced from 30px */
 }
 
 .aboutImage:hover {
@@ -290,8 +290,8 @@
   }
 
   .aboutImage {
-    max-width: 350px;
-    height: 350px;
+    max-width: 400px; /* Slightly bigger than before on tablet */
+    height: 400px;
   }
 
   .aboutCard {
@@ -309,7 +309,7 @@
 
 @media (max-width: 640px) {
   .about {
-    padding: 60px 0;
+    padding: 10px 0 40px 0; /* Minimal top padding on mobile */
   }
 
   .container {
@@ -325,8 +325,8 @@
   }
 
   .aboutImage {
-    max-width: 280px;
-    height: 280px;
+    max-width: 300px; /* Slightly bigger than before on mobile */
+    height: 300px;
     border: 5px solid white;
   }
 
