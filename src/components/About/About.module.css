@@ -57,6 +57,7 @@
   font-size: 1.2rem;
   color: #6c757d;
   animation: fadeInUp 0.8s ease 0.2s backwards;
+  font-weight: 700;
 }
 
 .content {
@@ -132,14 +133,7 @@
   padding-left: 1rem;
 }
 
-.cardTitle::before {
-  content: '💻';
-  position: absolute;
-  left: -10px;
-  top: -5px;
-  font-size: 2.5rem;
-  opacity: 0.2;
-}
+/* REMOVED THE COMPUTER ICON - it was here */
 
 .text {
   font-size: 1.05rem;

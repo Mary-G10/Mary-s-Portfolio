@@ -1,17 +1,17 @@
 .skills {
-  padding: 100px 0;
+  padding: 40px 0;  /* Further reduced from 60px */
   background: #f8f9fa;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+   padding: 0 2rem; 
 }
 
 .header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;  /* Reduced from 4rem */
 }
 
 .title {
@@ -27,23 +27,24 @@
 .subtitle {
   font-size: 1.2rem;
   color: #6c757d;
+  font-weight: 700;
 }
 
 .skillsGrid {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2.5rem;  /* Reduced from 4rem */
 }
 
 .category {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;  /* Reduced from 2rem */
 }
 
 .categoryTitle {
   font-size: 2rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;  /* Reduced from 2rem */
   position: relative;
   padding-bottom: 1rem;
 }
@@ -123,7 +124,7 @@
   background: white;
   border-radius: 20px;
   padding: 3rem;
-  margin-top: 4rem;
+  margin-top: 2.5rem;  /* Reduced from 4rem */
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -184,7 +185,7 @@
 
 @media (max-width: 640px) {
   .skills {
-    padding: 60px 0;
+    padding: 25px 0;  /* Further reduced from 40px */
   }
 
   .container {

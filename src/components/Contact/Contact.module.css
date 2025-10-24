@@ -1,5 +1,5 @@
 .contact {
-  padding: 100px 0;
+  padding: 20px 0 100px 0; /* Further reduced top padding to 20px */
   background: #f8f9fa;
 }
 
@@ -27,6 +27,7 @@
 .subtitle {
   font-size: 1.2rem;
   color: #6c757d;
+  font-weight: 700; /* Added bold */
 }
 
 .contactInfo {
@@ -217,7 +218,7 @@
 
 @media (max-width: 640px) {
   .contact {
-    padding: 60px 0;
+    padding: 15px 0 60px 0; /* Also reduced for mobile */
   }
 
   .title {

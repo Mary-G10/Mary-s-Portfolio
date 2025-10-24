@@ -16,7 +16,7 @@ const About = () => {
           <h2 className={styles.title}>About Me</h2>
           <p className={styles.subtitle}>
             <strong>From Healthcare to Tech: A Unique Journey</strong>
-            {/* From Healthcare to Tech: A Unique Journey */}
+          
           </p>
         </div>
 
