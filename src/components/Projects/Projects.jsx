@@ -26,7 +26,7 @@ const Projects = () => {
             Check out my GitHub for more projects and contributions
           </p>
           <a
-            href="https://github.com"
+            href="https://github.com/Mary-G10"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}
