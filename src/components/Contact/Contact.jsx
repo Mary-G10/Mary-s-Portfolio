@@ -32,7 +32,7 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: 'fab fa-github', url: 'https://github.com', label: 'GitHub' },
+    { icon: 'fab fa-facebook', url: 'https://facebook.com', label: 'Facebook' },
     { icon: 'fab fa-linkedin', url: 'https://linkedin.com', label: 'LinkedIn' },
     { icon: 'fab fa-twitter', url: 'https://twitter.com', label: 'Twitter' },
     { icon: 'fab fa-instagram', url: 'https://instagram.com', label: 'Instagram' }
@@ -163,8 +163,8 @@ const Contact = () => {
           <p className={styles.socialText}>Follow me on social media and let's stay connected</p>
           <div className={styles.socialLinks}>
             {socialLinks.map((social, index) => (
-              <a
-                key={index}
+              
+               <a key={index}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
